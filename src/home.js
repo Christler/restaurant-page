@@ -1,14 +1,8 @@
-function createHome(){
+export default function createHome(){
+    const content = document.getElementById('content')
     const container = document.createElement('div')
 
-    container.innerHTML = `<header>
-    <nav>
-        <div id="homeTab">Home</div>
-        <div id="menuTab">Menu</div>
-        <div id="contactTab">Contact Us</div>
-    </nav>
-    </header>
-
+    container.innerHTML = `
     <div class="hero">
         <h1>Pizza Restaurant</h1>
     </div>
@@ -25,8 +19,5 @@ function createHome(){
     <footer>
         <p>Copyright 2022 Christler</p>
     </footer>`
-
-    return container
+    content.appendChild(container)
 }
-
-export default createHome()

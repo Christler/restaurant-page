@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+header{
+    background: red;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+nav div{
+    font-size: 24px;
+    padding: 20px;
+}
+
+.hero{
+    height: 70vh;
+    background: url('./images/hero-pizza.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

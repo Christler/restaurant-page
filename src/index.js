@@ -1,4 +1,6 @@
+import './style.css'
+import header from './header.js'
 import home from './home.js'
 
-const content = document.getElementById('content')
-content.appendChild(home)
+header()
+home()
