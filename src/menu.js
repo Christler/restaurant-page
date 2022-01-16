@@ -1,6 +1,6 @@
 export default function createMenu(){
 
-    const content = document.getElementById('content')
+    const main = document.querySelector('.main')
 
-    content.append("Menu Page")
+    main.append("Menu Page")
 }

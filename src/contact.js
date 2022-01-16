@@ -1,6 +1,6 @@
 export default function createContact(){
 
-    const content = document.getElementById('content')
+    const main = document.querySelector('.main')
 
-    content.append('Contact Page')
+    main.append('Contact Page')
 }

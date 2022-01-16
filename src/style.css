@@ -19,8 +19,17 @@ nav{
 }
 
 nav div{
+    cursor: pointer;
     font-size: 24px;
     padding: 20px;
+}
+
+nav div:hover{
+    outline: 2px solid black;
+}
+
+.active{
+    outline: 2px solid black;
 }
 
 /*home page*/

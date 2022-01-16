@@ -5,7 +5,7 @@ import image3 from './images/pizza3.jpg'
 const imageArr = [image1, image2, image3]
 
 export default function createHome(){
-    const content = document.getElementById('content')
+    const main = document.querySelector('.main')
     
     //hero section
     const heroSection = document.createElement('div')
@@ -38,7 +38,7 @@ export default function createHome(){
         imageGrid.append(img)
     }
 
-    //add sections to content
-    content.append(heroSection, infoSection, imageGrid)
+    //add sections to main
+    main.append(heroSection, infoSection, imageGrid)
       
 }
