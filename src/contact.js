@@ -14,10 +14,6 @@ export default function createContact(){
     const contactInfo = document.createElement('div')
     contactInfo.className = 'contactInfo'
 
-    // const logo = document.createElement('img')
-    // logo.className = 'logo'
-    // logo.src = image
-
     const phoneHeading = document.createElement('h2')
     phoneHeading.innerHTML = "Phone"
 
