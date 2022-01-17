@@ -1,22 +1,21 @@
-import image1 from './images/pizza1.jpg'
-import image2 from './images/pizza2.jpg'
-import image3 from './images/pizza3.jpg'
+import image1 from './images/home-images/pizza1.jpg'
+import image2 from './images/home-images/pizza2.jpg'
+import image3 from './images/home-images/pizza3.jpg'
+import logo from "./images/logos/logo-transparent.png"
 
 const imageArr = [image1, image2, image3]
 
 export default function createHome(){
     const main = document.querySelector('.main')
     
-    //hero section
     const heroSection = document.createElement('div')
     heroSection.className = 'hero'
 
-    const heroHeading = document.createElement('h1')
-    heroHeading.innerHTML = 'Pizza Restaurant'
+    const heroLogo = document.createElement('img')
+    heroLogo.src = logo
     
-    heroSection.append(heroHeading)
+    heroSection.append(heroLogo)
     
-    //info section
     const infoSection = document.createElement('div')
     infoSection.className = 'info'
 
@@ -28,7 +27,6 @@ export default function createHome(){
     
     infoSection.append(infoHeading, infoP) 
 
-    //image grid section
     const imageGrid = document.createElement('div')
     imageGrid.className = 'imageGrid'
 
@@ -39,6 +37,6 @@ export default function createHome(){
     }
 
     //add sections to main
-    main.append(heroSection, infoSection, imageGrid)
+    main.append(heroSection, imageGrid, infoSection)
       
 }

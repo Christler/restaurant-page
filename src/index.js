@@ -16,19 +16,19 @@ const menuTab = document.querySelector('#menuTab')
 const contactTab = document.querySelector('#contactTab')
 
 homeTab.addEventListener('click', (e) => {
-    clearContent()
+    clearMainSection()
     home()
     setActiveTab(e)
 })
 
 menuTab.addEventListener('click', (e) => {
-    clearContent()
+    clearMainSection()
     menu()
     setActiveTab(e)
 })
 
 contactTab.addEventListener('click', (e) => {
-    clearContent()
+    clearMainSection()
     contact()
     setActiveTab(e)
 })
@@ -39,7 +39,7 @@ function setActiveTab(tab){
     tab.srcElement.classList.add('active')
 }
 
-function clearContent(){
+function clearMainSection(){
     const main = document.querySelector('.main')
     main.innerHTML = ""
 }

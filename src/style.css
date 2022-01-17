@@ -1,36 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 
 body{
     margin: 0;
     padding: 0;
     line-height: 1.5;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main{
+    min-height: 80vh;
+}
+
+.heading{
+    padding-top: 25px;
+    text-align: center;
+}
+
+p{
+    font-size: large;
 }
 
 /*header section*/
 header{
-    background: red;
+    background: white;
     position: sticky; top: 0;
 }
 
 nav{
     display: flex;
     justify-content: center;
+    background-color: rgb(245, 245, 3);
+    height: 8vh;
 }
 
 nav div{
     cursor: pointer;
     font-size: 24px;
+    font-weight: 700;
     padding: 20px;
+    transition: .3s;
 }
 
-nav div:hover{
-    outline: 2px solid black;
+nav div:hover, .active{
+    background: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-.active{
-    outline: 2px solid black;
-}
 
 /*home page*/
 /*hero section*/
@@ -38,29 +54,28 @@ nav div:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
-    background: url('./images/hero-pizza.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    
 }
 
-.hero h1{
-    color: White;
+.hero img{
+    height: 50vh;
 }
 
+/*info section*/
 .info{
     height: 50vh;
+    line-height: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(221, 221, 221);
     padding: 25px;
+    background-color: rgb(245, 245, 3);
 }
 
 .info h2{
     text-align: center;
+    font-size: 32px;
     padding: 20px;
     margin: 0;
 }
@@ -69,6 +84,7 @@ nav div:hover{
     text-align: center;
     width: 60%;
     padding-bottom: 20px;
+    font-style: italic;
 }
 
 /*image grid section*/
@@ -83,6 +99,55 @@ nav div:hover{
     object-fit: cover;
 }
 
+/*menu section*/
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuItem{
+    width: 70%;
+    background-color: rgb(245, 245, 3);
+    display: flex;
+    border-radius: 15px;
+    margin: 10px 0;
+}
+
+.menuItem img{
+    padding: 20px;
+}
+
+.pizzaInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/*contact section*/
+.contact{
+    display: flex;
+    justify-content: center;
+}
+
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    background-color: rgb(245, 245, 3);
+    border-radius: 15px;
+    margin: 10px 0 40px 0;
+    padding: 25px;
+}
+
+.contactInfo p{
+    text-align: center;
+    margin: 0;
+}
+
 
 /*footer section*/
 footer{
@@ -90,6 +155,7 @@ footer{
     color: white;
     text-align: center;
     padding: 20px;
+    height: 6vh;
 }
 
 footer p{
